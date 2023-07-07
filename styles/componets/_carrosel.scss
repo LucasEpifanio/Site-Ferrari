@@ -1,0 +1,117 @@
+section{
+    padding: 5rem 10rem;
+}
+.home{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: $cor-vermelho;
+}
+
+.home::before{
+    z-index: 777;
+    content:'';
+    position:absolute;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; 
+}
+
+.home .content{
+    z-index: 888;
+    width: 70%;
+    margin-top: 3rem 0;
+    display: none;
+}
+.home .content.active{
+    display: block;
+}
+
+.home .content h1{
+    font-size: 4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    line-height: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.home .content span{
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.home .content p{
+    margin-bottom: 4rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height:1.6rem;
+}
+
+.home .content a{
+    background: $cor-branca;
+    padding: 0.8rem 1.5rem;
+    color: #232323;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: solid 0.1rem $cor-branca;
+    border-radius: 0.1rem;
+    transition: 0.5s ;
+}
+.home .content a:hover{
+    background: #ffffff00;
+    color: $cor-branca;
+    border: solid 0.1rem $cor-vermelho;
+    border-radius: 0.1rem;
+}
+
+.slider-navigation{
+    z-index: 888;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(8rem);
+    margin-bottom: 1rem;
+}
+.slider-navigation .nav-btn{
+    width: 0.8rem;
+    height: 0.8rem;
+    background: $cor-branca;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 0.5rem $cor-branca;
+    transition: 0.3s ease;
+}
+.slider-navigation .nav-btn.active{
+    background: $cor-vermelho;
+}
+.slider-navigation .nav-btn:not(:last-child){
+    margin-right: 2.2rem;
+}
+.slider-navigation .nav-btn:hover{
+    transform: scale(1.4);
+}
+
+
+
+@media (max-width: 1260px){
+    section{
+        padding: 5rem 5rem;
+    }
+}
+@media (max-width: 1040px){
+    section{
+        padding: 5rem 3rem;
+    }
+}
+@media (max-width: 740px){
+    section{
+        padding: 5rem 0.8rem;
+    }
+}

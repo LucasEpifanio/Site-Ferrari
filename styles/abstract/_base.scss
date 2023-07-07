@@ -1,0 +1,18 @@
+@import './variaveis';
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+h1,h2,h3,p,a,span{
+    color: $cor-branca;
+    font-family: $fonte-primaria;
+}
+
+/*suavizar-scroll-menu*/
+html{
+    scroll-behavior: smooth;
+}
