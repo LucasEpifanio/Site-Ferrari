@@ -730,9 +730,13 @@ footer h2 {
   }
 }
 ::-webkit-scrollbar {
-  width: 0.6rem;
+  width: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #9f0000;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000;
 }/*# sourceMappingURL=style.css.map */

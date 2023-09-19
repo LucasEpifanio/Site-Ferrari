@@ -31,7 +31,7 @@ const callback = (entries, observer) => {
 const observer = new IntersectionObserver(callback, options);
 observer.observe(homeSection);
 
-// Restante do código JavaScript fornecido anteriormente
+
 const menuBtn = document.querySelector(".menu-btn");
 const navigation = document.querySelector(".navigation");
 
