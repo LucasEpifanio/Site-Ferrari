@@ -1,4 +1,4 @@
-<p align="center"> <img src="./imagens/favicon.svg" alt="logo da ferrari"> </p>
+<p align="center"> <img src="./imagens/logo-footer.png" alt="logo da ferrari"> </p>
 
 <hr>
 
