@@ -2,7 +2,7 @@
 
 <hr>
 
-<h3 align="center">Desenvolvendo Site da Ferrari.</h3>
+<h1 align="center">Desenvolvendo Site da Ferrari.</h1>
 
 ## Tecnologias utilizadas durante o projeto
 * Javascript
