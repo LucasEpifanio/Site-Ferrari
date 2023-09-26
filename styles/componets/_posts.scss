@@ -1,4 +1,8 @@
 /*post*/
+section.post-section{
+    background: #0c0c0c;
+    padding: 2rem 0.5rem;
+}
 .post{
     background-color: #0c0c0c;
 }
@@ -9,6 +13,7 @@
     column-gap: 1.5rem;
     padding-top: 2rem !important;
     background-color: #0c0c0c;
+    margin-top: 5rem;
 }
 .filter-item{
     font-weight: 600;

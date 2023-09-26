@@ -12,19 +12,20 @@ header {
     font-family: $fonte-primaria;
 }
 
-header{
+header {
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
-    transition: 1.2s ease;
+    transition: 1s ease;
 }
-header.rolagem{
-    background-color: #000000a4;
-    height: 4.8rem;
+
+header.rolagem {
+    background-color: #000000ae;
+    height: 5rem;
     /* Ajuste a altura da sombra conforme necessário*/
-    box-shadow: 0px 0.2rem 2rem #af0000a3;
+    box-shadow: 0rem 0rem 1rem 0.2rem #870202;
 }
 
 svg {
@@ -38,6 +39,10 @@ svg {
     transition-timing-function: ease;
     transition-delay: 0s;
     transition-property: height;
+    transition: 0.3s ease;
+}
+svg:hover{
+    fill: #800606;
 }
 
 
@@ -57,10 +62,10 @@ header .navigation .navigation-items a {
 header .navigation .navigation-items a:before {
     content: '';
     position: absolute;
-    background: $cor-branca;
+    background: $cor-vermelho;
     width: 0;
     height: 0.1rem;
-    bottom: -0.1rem;
+    bottom: -0.2rem;
     left: 0;
     transition: 0.4s ease;
 }
@@ -88,7 +93,7 @@ header .navigation .navigation-items a:hover:before {
     }
 }
 
-@media (max-width: 1260px) {
+@media (max-width: 1190px) {
     header {
         padding: 0.5rem 2rem;
     }
@@ -110,35 +115,34 @@ header .navigation .navigation-items a:hover:before {
         display: flex;
         justify-content: center;
         align-items: center;
-        background: rgba(3, 3, 3, 0.5);
+        background: rgba(3, 3, 3, 0.338);
     }
 
 
     header .navigation .navigation-items a {
-        color: #222;
+        color: #ffffff;
         margin: 2rem;
         font-size: 1.2rem;
     }
 
     header .navigation .navigation-items a:before {
-        background: $cor-vermelho;
-        height: 0.1rem;
-        bottom: -0.1rem;
+        height: 0.2rem;
+        bottom: -0.2rem;
     }
 
     header .navigation.active .navigation-items {
-        background: $cor-branca;
-        height: 28rem;
-        width: 35rem;
+        background: #141414;
+        height: 30rem;
+        width: 30rem;
         max-width: 35rem;
-        max-height: 28rem;
+        max-height: 35rem;
         margin: 2rem;
         padding: 4rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         border-radius: 0.5rem;
-        box-shadow: 0 2rem 3rem $cor-vermelho;
+        box-shadow: 0 0 1rem 0.2rem $cor-vermelho;
     }
 
     .menu-btn {
@@ -148,7 +152,7 @@ header .navigation .navigation-items a:hover:before {
         width: 3rem;
         height: 3rem;
         cursor: pointer;
-        transition: 0.3s ease;
+        transition: 0.4s ease;
     }
 
     .menu-btn.active {
@@ -156,7 +160,7 @@ header .navigation .navigation-items a:hover:before {
         background: url(../../imagens/close.png) no-repeat;
         background-size: 2rem;
         background-position: center;
-        transition: 0.3s ease;
+        transition: 0.4s ease;
     }
 
 }

@@ -20,6 +20,7 @@
 </head>
 
 <body>
+    <a name="home"></a>
 
     <header id="header">
         <svg role="img" aria-labelledby="ferrari-logo-svg-title" viewBox="0 0 162 224">
@@ -30,10 +31,10 @@
         <div class="menu-btn"></div>
         <div class="navigation">
             <div class="navigation-items">
-                <a href="#">HOME</a>
+                <a href="#home">HOME</a>
                 <a href="#carro">CARRO</a>
-                <a href="#noticias">NOTÍCIAS</a>
-                <a href="#galeria">GALERIA</a>
+                <a href="./noticias.html">NOTÍCIAS</a>
+                <a href="./galeria.html">GALERIA</a>
             </div>
         </div>
     </header>
@@ -99,6 +100,19 @@
             <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FFerrari" target="_blank"><i
                     class="fab fa-twitter"></i></a>
         </div>
+        <ul class="app__card-list">
+            <li class="app__card-list-item">
+                <label class="toggle">
+                    <input class="toggle-checkbox" type="checkbox" id="alternar-musica">
+                    <div class="toggle-switch"></div>
+                </label>
+            </li>
+            <li class="app__card-list-item">
+                <label class="app__card-list-label" for="alternar-musica">
+                    Música
+                </label>
+            </li>
+        </ul>
         <div class="slider-navigation">
             <div class="nav-btn active"></div>
             <div class="nav-btn"></div>
@@ -201,181 +215,6 @@
         </div>
     </section>
 
-
-    <div class="post-filter container">
-        <span class="filter-item active-filter" data-filter="tudo">Tudo</span>
-        <span class="filter-item" data-filter="corridas">Corridas</span>
-        <span class="filter-item" data-filter="motores">Motores</span>
-        <span class="filter-item" data-filter="tech">Tecnologia</span>
-    </div>
-
-    <!--Colocar o link das noticias reais-->
-
-    <a name="noticias"></a>
-    <section class="post container">
-        <!--Post 1-->
-        <div class="post-box tech">
-            <img src="./imagens/tech 1.jpg" alt="" class="post-img">
-            <h2 class="category">Tecnologia</h2>
-            <a href="https://www.turbo.pt/ferrari-ecras-tecnologia-televisores/" target="_blank" class="post-title">
-                Ferrari vai ter ecrãs com a mesma tecnologia OLED dos televisores de casa
-            </a>
-            <span class="post-date">13 Abr 2023</span>
-            <p class="post-description">A Ferrari acaba de anunciar uma parceria com a tecnológica sul-coreana Samsung,
-                para que, os futuros automóveis do Cavallino Rampante, venham a beneficiar da tecnologia OLED nos seus
-                ecrãs. Ou, dito de outra forma, prepare-se para reconhecer a tecnologia de ponta que vê nos televisores
-                de sua casa, dentro do seu Ferrari.</p>
-        </div>
-
-        <!--Post 2-->
-        <div class="post-box motores">
-            <img src="./imagens/motor 1.jpg" alt="" class="post-img">
-            <h2 class="category">Motores</h2>
-            <a href="https://www.grandepremio.com.br/f1/noticias/ferrari-diz-que-ainda-e-cedo-o-suficiente-para-fazer-alteracoes-na-regra-de-motores-de-2026/"
-                target="_blank" class="post-title">
-                Ferrari diz que ainda é “cedo o suficiente” para fazer alterações na regra de motores de 2026
-            </a>
-            <span class="post-date">07 jul 2023</span>
-            <p class="post-description">A Ferrari saiu em defesa da Red Bull em relação a possíveis mudanças no
-                regulamento técnico de motores da Fórmula 1, previsto para entrar em vigor a partir de 2026. A discussão
-                em volta da nova unidade de potência voltou a ser pauta no segmento, depois de Max Verstappen e a Red
-                Bull alertarem que os dados do simulador a respeito do novo propulsor são “bem terríveis”. De acordo com
-                Frédéric Vasseur, chefe da equipe italiana, ainda há tempo hábil para fazer pequenos ajustes nas regras.
-            </p>
-        </div>
-
-        <!--Post 3-->
-        <div class="post-box corridas">
-            <img src="./imagens/corrida 1.jpg" alt="" class="post-img">
-            <h2 class="category">Corridas</h2>
-            <a href="https://www.ojogo.pt/modalidades/motores/noticias/sainz-critico-para-com-a-ferrari-se-me-pagam-desta-forma-16627045.html"
-                target="_blank" class="post-title">
-                Carlos Sainz crítico para com a Ferrari: "Se me pagam desta forma..."
-            </a>
-            <span class="post-date">02 Jun 2023</span>
-            <p class="post-description">Espanhol sentia-se melhor do que o colega Leclerc e pediu ultrapassagem, mas
-                equipa recusou.
-                Carlos Sainz acabou o Grande Prémio da Áustria no quarto posto. No final, o espanhol não poupou nas
-                críticas à Ferrari, a sua própria equipa.</p>
-        </div>
-
-        <!--Post 4-->
-        <div class="post-box tech">
-            <img src="./imagens/tech 2.jpg" alt="" class="post-img">
-            <h2 class="category">Tecnologia</h2>
-            <a href="https://exame.com/casual/ferrari-nomeia-executivo-de-tecnologia-para-era-de-carros-eletricos/"
-                target="_blank" class="post-title">
-                Ferrari nomeia executivo de tecnologia para era de carros elétricos.
-            </a>
-            <span class="post-date">12 Feb 2023</span>
-            <p class="post-description">Benedetto Vigna, que ajudou a desenvolver a tecnologia de tela usada nos
-                primeiros iPhones da Apple, será o novo executivo do setor de tecnologia da Ferrari, que promete lançar
-                seu primeiro carro elétrico até 2025.
-            </p>
-        </div>
-
-        <!--Post 5-->
-        <div class="post-box motores">
-            <img src="./imagens/motor 2.jpg" alt="" class="post-img">
-            <h2 class="category">Motores</h2>
-            <a href="https://motorsport.uol.com.br/f1/news/f1-mercedes-e-red-bull-disputam-engenheiros-de-motor-da-ferrari/10491576/"
-                target="_blank" class="post-title">
-                F1: Mercedes e Red Bull disputam engenheiros de motor da Ferrari.
-            </a>
-            <span class="post-date">4 Jul 2023</span>
-            <p class="post-description">Há fabricantes batendo à porta de Maranello para encontrar especialistas no
-                setor: Emanuele Guidotti deixou Maranello depois de quase nove anos para ir para a Mercedes, enquanto
-                Angelo Rosetti, que também aparentemente optou por se estabelecer na Red Bull Powertrains.</p>
-        </div>
-
-        <!--Post 6-->
-        <div class="post-box corridas">
-            <img src="./imagens/corrida 2.jpg" alt="" class="post-img">
-            <h2 class="category">Corridas</h2>
-            <a href="https://www.autosport.pt/formula1/f1/gp-canada-f1-ferrari-afastada-dos-lugares-da-frente-mas-com-corrida-bem-definida/" target="_blank" class="post-title">
-                GP CANADÁ F1: FERRARI AFASTADA DOS LUGARES DA FRENTE, MAS COM CORRIDA BEM DEFINIDA.
-            </a>
-            <span class="post-date">18 Jun 2023</span>
-            <p class="post-description"> Os pilotos da Ferrari arrancaram da quinta e sexta fila da grelha de partida e tentaram recuperar terreno nas voltas iniciais, sendo a ultrapassagem de Carlos Sainz importante naquilo que seria o desenrolar da corrida da equipa italiana.</p>
-        </div>
-
-        <!--Post 7-->
-        <div class="post-box tech">
-            <img src="./imagens/tech 3.jpg" alt="" class="post-img">
-            <h2 class="category">Tecnologia</h2>
-            <a href="#" target="_blank" class="post-title">
-                Ferrari quer ter 80% de modelos elétricos e híbridos até 2030
-            </a>
-            <span class="post-date">16 Jun 2022</span>
-            <p class="post-description">O fabricante de automóveis de luxo Ferrari revelou esta quinta-feira que até
-                2026 espera que 60% da sua produção seja de modelos totalmente elétricos e híbridos e que esse valor
-                suba até 80% em 2030.</p>
-        </div>
-
-        <!--Post 8-->
-        <div class="post-box motores">
-            <img src="./imagens/motor 3.jpg" alt="" class="post-img">
-            <h2 class="category">Motores</h2>
-            <a href="https://www.razaoautomovel.com/noticias/proximo-motor-do-carro-um-v10-da-ferrari/" target="_blank"
-                class="post-title">
-                O próximo motor do teu carro? Um V10 da Ferrari
-            </a>
-            <span class="post-date">03 Feb 2016</span>
-            <p class="post-description">Uma unidade do motor Ferrari Tipo 046 que a marca italiana usou na Fórmula 1 vai
-                hoje a leilão na Rétromobile em Paris. Estreado no Ferrari F310 (em 1996), o Tipo 046 foi o primeiro
-                motor com arquitectura V10 depois dos turbos terem sido banidos da Fórmula 1, corria o ano de 1989.</p>
-        </div>
-
-        <!--Post 9-->
-        <div class="post-box corridas">
-            <img src="./imagens/corrida 3.jpg" alt="" class="post-img">
-            <h2 class="category">Corridas</h2>
-            <a href="https://www.grandepremio.com.br/f1/noticias/ferrari-celebra-melhor-corrida-da-temporada-com-charles-leclerc-no-podio-no-gp-da-austria/" target="_blank" class="post-title">
-                Ferrari celebra “melhor corrida da temporada” com Leclerc no pódio no GP da Áustria
-            </a>
-            <span class="post-date">02 Jul 2023</span>
-            <p class="post-description">John Elkann, CEO da Ferrari, esteve com a equipe durante o GP da Áustria, e, após o pódio de Charles Leclerc e o quarto lugar de Carlos Sainz, reconheceu a evolução na temporada e rasgou elogios ao time.</p>
-        </div>
-    </section>
-
-    <section class="gallery">
-        <a name="galeria"></a>
-        <h3 class="gallery-title">Galeria</h3>
-        <main>
-            <div class="gallery-container">
-                <a href="./imagens/1.jpg" target="_blank" class="gallery-items">
-                    <img src="imagens/1.jpg" alt="">
-                </a>
-                <a href="./imagens/2.jpg" target="_blank" class="gallery-items">
-                    <img src="imagens/2.jpg" alt="">
-                </a>
-                <a href="./imagens/3.jpg" target="_blank" class="gallery-items">
-                    <img src="imagens/3.jpg" alt="">
-                </a>
-                <a href="./imagens/4.jpg" target="_blank" class="gallery-items">
-                    <img src="imagens/4.jpg" alt="">
-                </a>
-                <a href="./imagens/5.jpg" target="_blank" class="gallery-items">
-                    <img src="imagens/5.jpg" alt="">
-                </a>
-                <a href="./imagens/6.jpg" target="_blank" class="gallery-items">
-                    <img src="imagens/6.jpg" alt="">
-                </a>
-                <a href="./imagens/7.jpg" target="_blank" class="gallery-items">
-                    <img src="imagens/7.jpg" alt="">
-                </a>
-                <a href="./imagens/8.jpg" target="_blank" class="gallery-items">
-                    <img src="imagens/8.jpg" alt="">
-                </a>
-                <a href="./imagens/9.jpg" target="_blank" class="gallery-items">
-                    <img src="imagens/9.jpg" alt="">
-                </a>
-            </div>
-        </main>
-    </section>
-
-
-
     <footer class="footer">
         <ul class="right-area">
             <li class="link-area">
@@ -447,9 +286,12 @@
         </div>
     </footer>
 
+
     <script src="https://code.jquery.com/jquery-3.7.0.js"
-        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="javascript.js"></script>
+    integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./slider-menu.js"></script>
+    <script src="./menu-scroll.js"></script>
+    <script src="./music.js"></script>
 
 </body>
 
